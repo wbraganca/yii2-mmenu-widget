@@ -1,0 +1,24 @@
+{
+	"name": "wbraganca/yii2-mmenu-widget",
+	"description": "The yii2-mmenu widget is a Yii 2 wrapper for the [jQuery-mmenu](http://mmenu.frebsite.nl/). A jQuery plugin for creating slick, app look-alike sliding menus for you mobile website with only one line of javascript",
+	"keywords": ["yii2", "extension", "yii2-mmenu", "yii2-extension", "yii2-mmenu-widget", "menu", "mmenu"],
+	"type": "yii2-extension",
+	"license": "BSD-3-Clause",
+	"support": {
+		"issues": "https://github.com/wbraganca/yii2-mmenu-widget/issues",
+		"wiki": "https://github.com/wbraganca/yii2-mmenu-widget/wiki/",
+		"source": "https://github.com/wbraganca/yii2-mmenu-widget"
+	},
+	"authors": [
+		{
+			"name": "Wanderson Bragança",
+			"email": "wanderson.wbc@gmail.com"
+		}
+	],
+	"require": {
+		"yiisoft/yii2": "*"
+	},
+	"autoload": {
+		"psr-4": { "wbraganca\\": "" }
+	}
+}
