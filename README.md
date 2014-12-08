@@ -27,8 +27,7 @@ How to use
 On your view file.
 
 ```php
-<?php
- echo \wbraganca\mmenu\Menu::widget([
+<?= \wbraganca\mmenu\Menu::widget([
     'items' => [
         [
             'label' => 'Home',
@@ -53,5 +52,5 @@ On your view file.
             ]
         ]
     ]
-]); ?>
+]) ?>
 ```

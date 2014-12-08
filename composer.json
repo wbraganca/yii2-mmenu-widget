@@ -16,9 +16,10 @@
 		}
 	],
 	"require": {
-		"yiisoft/yii2": "*"
+		"yiisoft/yii2": "*",
+		"bower-asset/jQuery.mmenu": "*"
 	},
 	"autoload": {
-		"psr-4": { "wbraganca\\": "" }
+		"psr-4": { "wbraganca\\mmenu\\": "" }
 	}
 }

@@ -60,6 +60,7 @@ class Menu extends \yii\widgets\Menu
 
     /**
      * Renders the main menu
+    * @return string
      */
     protected function renderMenu()
     {
@@ -103,17 +104,15 @@ class Menu extends \yii\widgets\Menu
      */
     protected function validateItems($item)
     {
-        if (!isset($item['label'])) {
+        if (! isset($item['label'])) {
             throw new InvalidConfigException("The 'label' option is required.");
         }
     }
 
     protected function registerScript()
     {
-        $id = $this->id;
         $clientOptions = Json::encode($this->clientOptions);
-        $js = '$("nav#' . $id .'").mmenu(' . $clientOptions . ');';
         $view = $this->getView();
-        $view->registerJs($js, \yii\web\view::POS_END);
+        $view->registerJs('$("nav#' . $this->id .'").mmenu(' . $clientOptions . ');');
     }
 }
